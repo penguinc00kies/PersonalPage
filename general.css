@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    background-color: green;
+    height: 75px;
+    align-items: center;
+}
+
+header > div {
+    padding: 1rem;   
+    color: beige;
+}
+
+header > div > a{
+    background-color: red;
+    padding: 1rem;
+    color: beige;
+}
