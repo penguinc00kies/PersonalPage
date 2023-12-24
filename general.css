@@ -3,10 +3,16 @@
     padding: 0;
 }
 
+body { 
+    min-height: 100vh; 
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
 header {
     display: flex;
     background-color: green;
-    height: 75px;
+    min-height: 75px;
     align-items: center;
 }
 
@@ -19,4 +25,21 @@ header > div > a{
     background-color: red;
     padding: 1rem;
     color: beige;
+}
+
+main {
+    background-color: paleturquoise;
+}
+
+footer{ 
+    min-height:50px; 
+    background:PapayaWhip; 
+    align-items: center; 
+}
+
+footer > div {        
+    /* display:table-cell; */
+    vertical-align:middle;
+    padding-top: 17px;    
+    padding-left: 10px;     
 }
