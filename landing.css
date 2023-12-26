@@ -1,9 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 #swap {
     padding: 32px;
     border-width: 2px;
     border-style: solid;
     border-color: brown;
     width: max-content;
+    max-width: 80px;
     word-wrap: normal;
 }
 
@@ -20,6 +26,14 @@
 
 #swap span{
     animation: 1s fade;
+}
+
+img {
+  max-width: 300px;
+  max-height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 
 @keyframes fade {

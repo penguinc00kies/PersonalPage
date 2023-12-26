@@ -43,3 +43,8 @@ footer > div {
     padding-top: 17px;    
     padding-left: 10px;     
 }
+
+.center {
+    margin: auto;
+    text-align: center;
+}
