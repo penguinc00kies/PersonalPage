@@ -1,31 +1,25 @@
-* {
-  margin: 0;
-  padding: 0;
+h1 {
+  padding-top: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
-#swap {
-    padding: 32px;
-    border-width: 2px;
-    border-style: solid;
-    border-color: brown;
-    width: max-content;
-    max-width: 80px;
-    word-wrap: normal;
+h2 {
+  padding-top: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
-#swap:hover:before {
-    /* display: block;
-    visibility: visible; */
-    content: "But I also do other things when I have time";
-    animation: 1s fade;
-}
-  
-#swap:hover span{
-    display: none;
+h3 {
+  padding-top: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
-#swap span{
-    animation: 1s fade;
+h4 {
+  max-width: 500px;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 img {
@@ -33,6 +27,8 @@ img {
   max-height: auto;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
   display: block;
 }
 
@@ -47,4 +43,10 @@ img {
       opacity: 1;
     }
 }  
+
+@media screen and (max-width: 500) {
+  img {
+    max-width: 80vw;
+  }
+}
 

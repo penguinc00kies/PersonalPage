@@ -1,0 +1,24 @@
+#swap {
+    padding: 32px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: brown;
+    width: max-content;
+    max-width: 80px;
+    word-wrap: normal;
+}
+
+#swap:hover:before {
+    /* display: block;
+    visibility: visible; */
+    content: "But I also do other things when I have time";
+    animation: 1s fade;
+}
+  
+#swap:hover span{
+    display: none;
+}
+
+#swap span{
+    animation: 1s fade;
+}

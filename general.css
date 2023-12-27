@@ -1,12 +1,14 @@
 * {
     margin: 0;
     padding: 0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 body { 
     min-height: 100vh; 
     display: grid;
     grid-template-rows: auto 1fr auto;
+    background-color: paleturquoise;
 }
 
 header {
@@ -27,18 +29,34 @@ header > div > a{
     color: beige;
 }
 
+@media screen and (max-width: 600px) {
+    header {
+        min-height: 35px;
+    }
+
+    header > div {
+        padding: 0.5rem;
+    }
+
+    header > div > a{
+        font-size: 12px;
+        padding: 0.5rem;
+        color: chartreuse;
+    }
+}
+
 main {
     background-color: paleturquoise;
 }
 
-footer{ 
+footer{
+    margin-top: 1rem;
     min-height:50px; 
     background:PapayaWhip; 
     align-items: center; 
 }
 
-footer > div {        
-    /* display:table-cell; */
+footer > div { 
     vertical-align:middle;
     padding-top: 17px;    
     padding-left: 10px;     
