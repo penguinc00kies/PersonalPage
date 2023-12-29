@@ -8,25 +8,28 @@ body {
     min-height: 100vh; 
     display: grid;
     grid-template-rows: auto 1fr auto;
-    background-color: paleturquoise;
+    /* background-color: paleturquoise; */
 }
 
 header {
     display: flex;
-    background-color: green;
-    min-height: 75px;
+    /* background-color: green; */
+    min-height: 100px;
     align-items: center;
+    background-image: url("banner.jpg");
+    background-size: 100vw;
+    background-position: 0% 42%;
 }
 
 header > div {
-    padding: 1rem;   
-    color: beige;
+    padding: 1rem;  
 }
 
 header > div > a{
-    background-color: red;
+    background: rgba(160, 160, 160, 0.7);
+    border-radius: 5px;
     padding: 1rem;
-    color: beige;
+    color: white;
 }
 
 @media screen and (max-width: 600px) {
@@ -46,20 +49,22 @@ header > div > a{
 }
 
 main {
-    background-color: paleturquoise;
+    background-color: white;
 }
 
 footer{
     margin-top: 1rem;
-    min-height:50px; 
-    background:PapayaWhip; 
+    min-height:30px; 
+    /* background:PapayaWhip;  */
+    border-top: 2px solid #555555;
     align-items: center; 
 }
 
 footer > div { 
     vertical-align:middle;
-    padding-top: 17px;    
-    padding-left: 10px;     
+    padding-top: 10px;    
+    padding-left: 10px;  
+    font-size: 10px;
 }
 
 .center {
