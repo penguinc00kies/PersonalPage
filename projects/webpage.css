@@ -29,3 +29,30 @@ li {
     margin-left: 28vw;
     margin-right: 25vw;
 }
+
+@media screen and (max-width: 600px) {
+    #heading {
+        margin-left: 15vw;
+        margin-right: 15vw;
+    }
+    
+    #subheading {
+        margin-left: 15vw;
+        margin-right: 15vw;
+    }
+    
+    #body {
+        margin-left: 15vw;
+        margin-right: 15vw;
+    }
+    
+    #bodycont {
+        margin-left: 15vw;
+        margin-right: 15vw;
+    }
+    
+    li {
+        margin-left: 18vw;
+        margin-right: 15vw;
+    }
+}
