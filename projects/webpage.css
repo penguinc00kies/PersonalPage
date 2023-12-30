@@ -1,0 +1,30 @@
+#heading {
+    margin-top: 1rem;
+    margin-left: 25vw;
+    margin-right: 25vw;
+}
+
+#subheading {
+    margin-top: 1rem;
+    margin-left: 25vw;
+    margin-right: 25vw;
+}
+
+#body {
+    font-weight: normal;
+    margin-top: 0.5rem;
+    margin-left: 25vw;
+    margin-right: 25vw;
+}
+
+#bodycont {
+    font-weight: normal;
+    margin-left: 25vw;
+    margin-right: 25vw;
+}
+
+li {
+    /* display: list-item; */
+    /* list-style-type: circle; */
+    margin-left: 28vw;
+}
