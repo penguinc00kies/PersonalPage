@@ -7,15 +7,19 @@
     max-width: 40vw;
     border-width: 2px;
     border-style: solid;
-    border-color: brown;
+    border-color: #bbbddf;
     box-shadow: 5px 5px #777777;
     margin-top: 1rem;
     margin-bottom: 1rem;
     display: block;
 }
 
-a {
+.itembox > a {
     display: block;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    margin-left: 4px;
+    margin-left: 4px;
 }
 
 .itembox:hover {
@@ -25,4 +29,10 @@ a {
 
 #reminder {
     font-size: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    .itembox {
+        max-width: 75vw;
+    }
 }
