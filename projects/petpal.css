@@ -30,6 +30,23 @@ li {
     margin-right: 25vw;
 }
 
+.gallery {
+    display: grid;
+    grid-template-columns: 24.5vw 24.5vw;
+    column-gap: 1vw;
+    row-gap: 1vw;
+    margin-left: 25vw;
+    margin-right: 25vw;
+}
+
+.gallery_img {
+    max-width:100%;
+    max-height:100%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
 .back {
     margin-top: 8px;
     margin-left: 25vw;
