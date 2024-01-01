@@ -27,6 +27,28 @@
     translate: 5px 5px;
 }
 
+.link {
+    text-decoration: underline;
+}
+
+.date {
+    font-size: 12;
+    color: #bbbbbb;
+}
+
+a:link { 
+    text-decoration: none; 
+} 
+a:visited { 
+    text-decoration: none; 
+} 
+a:hover { 
+    text-decoration: none; 
+} 
+a:active { 
+    text-decoration: none; 
+}
+
 #reminder {
     font-size: 10px;
 }
