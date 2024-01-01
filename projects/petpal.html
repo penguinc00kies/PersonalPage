@@ -41,17 +41,107 @@
     </h4>
     <h2 class="left" id="subheading">Some Images</h2>
     <h4 class="left" id="body">
-        Here are some screencaps of our website in action. 
+        Here are some screencaps of our website in action. Click to enlarge.
     </h4>
     <div class="gallery">
-        <div><img class="gallery_img" src="petpal_sc/petpal-sc1.png"></div>
-        <div><img class="gallery_img" src="petpal_sc/petpal-sc2.png"></div>
-        <div><img class="gallery_img" src="petpal_sc/petpal-sc3.png"></div>
-        <div><img class="gallery_img" src="petpal_sc/petpal-sc4.png"></div>
-        <div><img class="gallery_img" src="petpal_sc/petpal-sc5.png"></div>
-        <div><img class="gallery_img" src="petpal_sc/petpal-sc6.png"></div>
-        <div><img class="gallery_img" src="petpal_sc/petpal-sc7.png"></div>
-        <div><img class="gallery_img" src="petpal_sc/petpal-sc8.png"></div>
+        <img class="gallery_img" id="01" src="petpal_sc/petpal-sc1.png" alt="Login/signup page">
+        <div id="modal01" class="modal">
+            <span class="close" id="close01">&times;</span>
+            <img class="modal-content" id="img01">
+            <div class="caption" id="captionOne"><p></p></div>
+        </div>
+        <script>
+            // Get the modal
+            var modal = document.getElementById("modal01");
+            var img = document.getElementById("01");
+            var modalImg = document.getElementById("img01");
+            var captionText = document.getElementById("captionOne");
+            img.onclick = function(){
+              modal.style.display = "block";
+              modalImg.src = this.src;
+              captionText.innerHTML = this.alt;
+            }
+            // Get the <span> element that closes the modal
+            var span = document.getElementById("close01");
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() { 
+              modal.style.display = "none";
+            }
+        </script>
+        <img class="gallery_img" id="02" src="petpal_sc/petpal-sc2.png" alt="Featured pets on the search page">
+        <div id="modal02" class="modal">
+            <span class="close" id="close02">&times;</span>
+            <img class="modal-content" id="img02">
+            <div class="caption" id="caption02"><p></p></div>
+        </div>
+        <script>
+            // Get the modal
+            var modal = document.getElementById("modal02");
+            var img = document.getElementById("02");
+            var modalImg = document.getElementById("img02");
+            var captionText = document.getElementById("caption02");
+            img.onclick = function(){
+              modal.style.display = "block";
+              modalImg.src = this.src;
+              captionText.innerHTML = this.alt;
+            }
+            // Get the <span> element that closes the modal
+            var span = document.getElementById("close02");
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() { 
+              modal.style.display = "none";
+            }
+        </script>
+        <img class="gallery_img" id="03" src="petpal_sc/petpal-sc3.png" alt="A filtered search">
+        <div id="modal03" class="modal">
+            <span class="close" id="close03">&times;</span>
+            <img class="modal-content" id="img03">
+            <div class="caption" id="caption03"><p></p></div>
+        </div>
+        <script>
+            // Get the modal
+            var modal = document.getElementById("modal03");
+            var img = document.getElementById("03");
+            var modalImg = document.getElementById("img03");
+            var captionText = document.getElementById("caption03");
+            img.onclick = function(){
+              modal.style.display = "block";
+              modalImg.src = this.src;
+              captionText.innerHTML = this.alt;
+            }
+            // Get the <span> element that closes the modal
+            var span = document.getElementById("close03");
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() { 
+              modal.style.display = "none";
+            }
+        </script>
+        <img class="gallery_img" id="04" src="petpal_sc/petpal-sc4.png" alt="Pet listing details">
+        <div id="modal04" class="modal">
+            <span class="close" id="close04">&times;</span>
+            <img class="modal-content" id="img04">
+            <div class="caption" id="caption04"><p></p></div>
+        </div>
+        <script>
+            // Get the modal
+            var modal = document.getElementById("modal04");
+            var img = document.getElementById("04");
+            var modalImg = document.getElementById("img04");
+            var captionText = document.getElementById("caption04");
+            img.onclick = function(){
+              modal.style.display = "block";
+              modalImg.src = this.src;
+              captionText.innerHTML = this.alt;
+            }
+            // Get the <span> element that closes the modal
+            var span = document.getElementById("close04");
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() { 
+              modal.style.display = "none";
+            }
+        </script>
+
+
     </div>
     <h2 class="left" id="subheading">My Thoughts On The Final Product</h2>
     <h4 class="left" id="body">
