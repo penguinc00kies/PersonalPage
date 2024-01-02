@@ -1,3 +1,28 @@
+#heading {
+  margin-top: 8px;
+  margin-left: 25vw;
+  margin-right: 25vw;
+}
+
+#subheading {
+  margin-top: 1rem;
+  margin-left: 25vw;
+  margin-right: 25vw;
+}
+
+#body {
+  font-weight: normal;
+  margin-top: 0.5rem;
+  margin-left: 25vw;
+  margin-right: 25vw;
+}
+
+#bodycont {
+  font-weight: normal;
+  margin-left: 25vw;
+  margin-right: 25vw;
+}
+
 #swap {
     padding: 32px;
     border-width: 2px;
@@ -34,3 +59,30 @@
       opacity: 1;
     }
 } 
+
+@media screen and (max-width: 600px) {
+  #heading {
+      margin-left: 15vw;
+      margin-right: 15vw;
+  }
+  
+  #subheading {
+      margin-left: 15vw;
+      margin-right: 15vw;
+  }
+  
+  #body {
+      margin-left: 15vw;
+      margin-right: 15vw;
+  }
+  
+  #bodycont {
+      margin-left: 15vw;
+      margin-right: 15vw;
+  }
+  
+  li {
+      margin-left: 18vw;
+      margin-right: 15vw;
+  }
+}
