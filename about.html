@@ -17,9 +17,6 @@
 </header>
 <main>
     <!-- <p class="center" id="swap"><span>I'm a student at The University of Toronto</span></p> -->
-    <!-- <h1 class="center">UNDER CONSTRUCTION</h1>
-    <p class="center">OoOooOoOOOoh I'm so mysterious...</p> -->
-    <h1 class="center" id="heading">Jamie Yi</h1>
     <h2 class="left" id="subheading">Contact Information</h2>
     <p class="left" id="body">
       My email is <a href="mailto:jamie.yi@mail.utoronto.ca">jamie.yi@mail.utoronto.ca</a>
@@ -32,15 +29,78 @@
     </p>
     <p class="left" id="body">
       I'm a student member on the <a href="https://innis.utoronto.ca/get-involved/join-icc/" target="_blank">Innis College Council</a>
-      and the <a href="https://www.instagram.com/p/C1k5lijMjmH/" target="_blank">Clubs & Merchandise Director</a> on the 
+      and the <a href="https://www.instagram.com/innisclubsandmerch/" target="_blank">Clubs & Merchandise Director</a> on the 
       <a href="https://icss.sa.utoronto.ca/" target="_blank">Innis College Student Society</a>. When I'm not 
       bleeding green for Innis, I'm a peer mentor for a 
       <a href="https://www.artsci.utoronto.ca/future/academic-opportunities/flcs/computer-science#">computer science first-year learning community</a>.
     </p>
     <h2 class="left" id="subheading">Otherwise</h2>
     <p class="left" id="body">
-      I like to bake. Maybe I'll start a baking blog at some point...
+      I like to bake. Here are some recent creations I'm particularly proud of.
     </p>
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+
+      <!-- Full-width images with number and caption text -->
+      <div class="mySlides">
+        <div class="numbertext"></div>
+        <img src="baking/babka.jpg">
+        <div class="text">Chocolate Babka</div>
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext"></div>
+        <img src="baking/lemon_bars.jpg">
+        <div class="text">Lemon Bars</div>
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext"></div>
+        <img src="baking/cheesecake.jpg">
+        <div class="text">Cheesecake</div>
+      </div>
+
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+      
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+      
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+      
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+      }
+    </script>
 </main>
 <footer>
   <div>Copyright © 2024 Jamie Yi</div>
