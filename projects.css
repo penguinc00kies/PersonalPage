@@ -29,6 +29,7 @@
 
 .link {
     text-decoration: underline;
+    padding-bottom: 6px;
 }
 
 .date {
@@ -37,7 +38,7 @@
 }
 
 a:link { 
-    text-decoration: none; 
+    text-decoration: none;
 } 
 a:visited { 
     text-decoration: none; 
